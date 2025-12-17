@@ -1,14 +1,17 @@
 {
 	"name": "tabella-nextjs",
 	"description": "To create and view schemas in SQL and more",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev -p 5757 --turbopack",
 		"build": "next build --turbopack",
 		"start": "next start",
 		"postinstall": "next telemetry disable",
-		"secret": "npx @better-auth/cli@latest secret"
+		"secret": "npx @better-auth/cli@latest secret",
+		"db:schema": "npx @better-auth/cli@latest generate --config src/libs/better-auth/auth.ts",
+		"db:push": "npx drizzle-kit push && npx drizzle-kit generate",
+		"db:studio": "npx drizzle-kit studio"
 	},
 	"dependencies": {
 		"better-auth": "1.4.7",
