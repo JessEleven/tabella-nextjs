@@ -1,7 +1,7 @@
 {
 	"name": "tabella-nextjs",
 	"description": "To create and view schemas in SQL and more",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev -p 5757 --turbopack",
@@ -19,7 +19,9 @@
 		"drizzle-orm": "0.45.1",
 		"next": "15.5.8",
 		"react": "19.2.3",
-		"react-dom": "19.2.3"
+		"react-dom": "19.2.3",
+		"tailwind-merge": "3.4.0",
+		"tailwind-variants": "3.2.2"
 	},
 	"devDependencies": {
 		"@tailwindcss/postcss": "4.1.18",

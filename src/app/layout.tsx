@@ -15,13 +15,11 @@ export const metadata: Metadata = {
 	icons: [{ rel: 'icon', url: '/favicon.svg' }],
 }
 
-export default function RootLayout({
-	children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang='en'>
 			<body
-				className={`${roboto.className} antialiased`}
+				className={`${roboto.className} bg-matte-black antialiased`}
 				suppressHydrationWarning
 			>
 				{children}

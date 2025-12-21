@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+	/* For the text */
+	--color-neutral: #f5f5f5;
+
+	/* Landing background color and login */
+	--color-matte-black: #1c1a1a;
+
+	--radius-five: 5px;
+}
+
+.app-transition {
+	@apply transition-colors duration-300 ease-in-out;
+}
